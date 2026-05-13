@@ -1,0 +1,329 @@
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mary Kay con Verónica Torrez</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:'Poppins',sans-serif;
+background:#000;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+nav h1{
+color:#d4af37;
+letter-spacing:3px;
+font-weight:500;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url('images/portada.jpg') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+}
+.hero::after{
+content:"";
+position:absolute;
+top:0;left:0;
+width:100%;height:100%;
+background:rgba(0,0,0,0.6);
+}
+.hero-content{
+position:relative;
+z-index:2;
+}
+.hero h2{
+font-size:50px;
+font-weight:300;
+letter-spacing:5px;
+color:#d4af37;
+}
+.hero p{
+margin:20px 0;
+}
+.hero a{
+padding:14px 35px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+font-weight:600;
+transition:0.4s;
+}
+.hero a:hover{
+background:white;
+}
+
+/* SECTION */
+.section{
+padding:100px 8%;
+}
+.section h2{
+text-align:center;
+margin-bottom:60px;
+font-weight:300;
+letter-spacing:4px;
+color:#d4af37;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.card{
+background:#111;
+padding:20px;
+text-align:center;
+transition:0.4s;
+position:relative;
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+transition:0.5s;
+}
+
+.card:hover img{
+transform:scale(1.08);
+}
+
+.price{
+margin:15px 0;
+font-weight:bold;
+color:#d4af37;
+}
+
+.descuento{
+position:absolute;
+top:10px;
+left:10px;
+background:#d4af37;
+color:black;
+padding:5px 10px;
+font-size:12px;
+font-weight:bold;
+}
+
+.card a{
+display:inline-block;
+margin-top:10px;
+padding:10px 20px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.card a:hover{
+background:white;
+}
+
+/* ASESORIA */
+.asesoria{
+background:#111;
+text-align:center;
+padding:80px 20px;
+}
+
+.asesoria h2{
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.asesoria a{
+padding:14px 35px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:40px;
+background:black;
+font-size:14px;
+color:#777;
+}
+
+.veronica{
+background:#000;
+padding:100px 10%;
+}
+
+.veronica-container{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:60px;
+}
+
+.veronica-img img{
+width:320px;
+border-radius:50%;
+border:5px solid #d4af37;
+box-shadow:0 0 40px rgba(212,175,55,0.4);
+}
+
+.veronica-text{
+flex:1;
+}
+
+.veronica-text h2{
+color:#d4af37;
+font-weight:300;
+letter-spacing:3px;
+margin-bottom:25px;
+}
+
+.veronica-text p{
+color:#ccc;
+line-height:1.7;
+margin-bottom:20px;
+}
+
+.veronica-text a{
+display:inline-block;
+padding:14px 30px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.veronica-text a:hover{
+background:white;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>Mary Kay con Verónica Torrez</h1>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+<h2>Descubre Tu Mejor Versión</h2>
+<p>Consultora de Belleza | Envíos a Todo México</p>
+<a href="https://wa.me/5213113418006" target="_blank">Comprar por WhatsApp</a>
+</div>
+</section>
+
+<section class="section">
+<h2>Colección Destacada</h2>
+<div class="grid">
+
+<div class="card">
+<img src="images/brochas.jpg">
+<h3>Set esencial de brochas</h3>
+<div class="price">$150</div>
+<a href="https://wa.me/5213113418006?text=Hola%20Verónica,%20me%20interesa%20el%20Set%20de%20Brochas" target="_blank">Pedir</a>
+</div>
+
+<div class="card">
+<img src="images/labial.jpg">
+<h3>Labial Hidratante</h3>
+<div class="price">$150</div>
+<a href="https://wa.me/5213113418006?text=Hola%20Verónica,%20me%20interesa%20el%20Labial%20Hidratante" target="_blank">Pedir</a>
+</div>
+
+<div class="card">
+<img src="images/matte3d.jpg">
+<div class="descuento">Descuento</div>
+<h3>Matte 3D Foundation</h3>
+<div class="price">$150</div>
+<a href="https://wa.me/5213113418006?text=Hola%20Verónica,%20me%20interesa%20Matte%203D%20Foundation" target="_blank">Pedir</a>
+</div>
+
+<div class="card">
+<img src="images/atplay.jpg">
+<div class="descuento">Descuento</div>
+<h3>At Play</h3>
+<div class="price">$150</div>
+<a href="https://wa.me/5213113418006?text=Hola%20Verónica,%20me%20interesa%20At%20Play" target="_blank">Pedir</a>
+</div>
+
+<div class="card">
+<img src="images/micro.jpg">
+<div class="descuento">Descuento</div>
+<h3>Micro Exfoliante</h3>
+<div class="price">$150</div>
+<a href="https://wa.me/5213113418006?text=Hola%20Verónica,%20me%20interesa%20Micro%20Exfoliante" target="_blank">Pedir</a>
+</div>
+
+</div>
+</section>
+
+<section class="veronica">
+<div class="veronica-container">
+
+<div class="veronica-img">
+<img src="images/veronica.jpg" alt="Verónica Torrez">
+</div>
+
+<div class="veronica-text">
+<h2>Sobre Verónica Torrez</h2>
+<p>
+Soy Consultora de Belleza Mary Kay comprometida con ayudarte a descubrir tu mejor versión.
+Mi misión es brindarte asesoría personalizada, productos de alta calidad y una experiencia
+de belleza profesional desde la comodidad de tu hogar.
+</p>
+
+<p>
+Trabajo con mujeres de todo México que desean cuidar su piel,
+realzar su belleza natural y sentirse seguras todos los días.
+</p>
+
+<a href="https://wa.me/5213113418006?text=Hola%20Verónica,%20quiero%20más%20información%20sobre%20los%20productos" target="_blank">
+Hablar con Verónica
+</a>
+
+</div>
+
+</div>
+</section>
+
+<section class="asesoria">
+<h2>Agenda Tu Asesoría Personalizada</h2>
+<p>Recibe recomendaciones exclusivas para tu tipo de piel.</p>
+<br>
+<a href="https://wa.me/5213113418006?text=Hola%20Verónica,%20quiero%20agendar%20una%20asesoría" target="_blank">Agendar Ahora</a>
+</section>
+
+<footer>
+© 2026 Mary Kay con Verónica Torrez | Belleza Profesional
+</footer>
+
+</body>
+</html>
